@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var so=+prompt('bạn chỉ được nhập số vào ô này:');
+    var lan = so.toString();
+    var ketqua = [lan[0]];
+
+    for(var x=1; x<lan.length; x++){
+        if((lan[x-1]%2 === 0)&&(lan[x]%2 === 0)){
+            ketqua.push('-', lan[x]);
+        }else
+            ketqua.push(lan[x]);
+
+    }
+    console.log(ketqua.join(''));
+    document.write("kết quả của bạn vừa nhập vào đây:"+ ketqua.join(''))
+
+</script>
+</body>
+</html>

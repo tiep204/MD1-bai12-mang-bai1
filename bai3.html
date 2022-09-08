@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var chu = window.prompt('hãy nhập chữ tôi sẽ chuyển ngược chữ của bạn thành chữ thường or chữ hoa:')
+  var chuHoa ='QWERTYUIOPASDFGHJKLZXCVBM';
+  var chuThuong ='qwertyuiopasdfghjklzxcvbnm';
+  var ketQua = [];
+
+  for(var x=0; x<chu.length; x++) {
+    if(chuHoa.indexOf(chu[x]) !==-1) {
+      ketQua.push(chu[x].toLowerCase());
+    }else if (chuThuong.indexOf(chu[x]) !==-1){
+      ketQua.push(chu[x].toUpperCase());
+    }else{
+      ketQua.push(chu[x]);
+    }
+  }
+  console.log(ketQua.join(''));
+  document.write(ketQua.join(''));
+</script>
+</body>
+</html>
